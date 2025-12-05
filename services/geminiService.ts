@@ -1,13 +1,8 @@
 import { GoogleGenAI, GenerateContentResponse } from "@google/genai";
 
-// Initialize the client. API_KEY is guaranteed to be in process.env per instructions.
 const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
-/**
- * Sends a message to the Gemini model with the current context (Knowledge Base).
- * We construct a fresh prompt each time to ensure the latest KB is used without
- * managing complex chat history sessions on the client side for this specific "stateless context" requirement.
- */
+
 export const sendMessageToGemini = async (
   message: string,
   context: string,
