@@ -1,10 +1,10 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { ChatBubble } from './components/ChatBubble';
-import { KnowledgePanel } from './components/KnowledgePanel';
-import { SendIcon, BotIcon, DatabaseIcon } from './components/Icon';
-import { sendMessageToGemini } from './services/geminiService';
-import { Message, TabView } from './types';
-import { DEFAULT_KNOWLEDGE_BASE, WELCOME_MESSAGE } from './constants';
+import { ChatBubble } from '../components/ChatBubble';
+import { KnowledgePanel } from '../components/KnowledgePanel';
+import { SendIcon, BotIcon, DatabaseIcon } from '../components/Icon';
+import { sendMessageToGemini } from '../services/geminiService';
+import { Message, TabView } from '../types';
+import { DEFAULT_KNOWLEDGE_BASE, WELCOME_MESSAGE } from '../constants';
 
 const App: React.FC = () => {
 
